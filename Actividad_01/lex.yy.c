@@ -723,7 +723,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 8 "actividad_01.l"
-{printf("numero: %d",atoi(yytext));}
+{printf("numero del 0,1,2,3 y 4");}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP

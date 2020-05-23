@@ -363,9 +363,9 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[11] =
+static const flex_int16_t yy_accept[9] =
     {   0,
-        0,    0,    4,    3,    3,    1,    0,    1,    2,    0
+        0,    0,    4,    2,    3,    1,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -374,8 +374,8 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    3,    1,    1,    1,    4,    4,    4,
-        4,    4,    4,    4,    4,    4,    4,    1,    5,    1,
+        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -400,33 +400,29 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[6] =
+static const YY_CHAR yy_meta[4] =
     {   0,
-        1,    1,    2,    3,    4
+        1,    1,    2
     } ;
 
-static const flex_int16_t yy_base[15] =
+static const flex_int16_t yy_base[10] =
     {   0,
-        0,    3,   14,    0,   15,    9,    0,    0,   15,   15,
-        7,   10,    2,    0
+        0,    0,    5,    6,    6,    0,    0,    6,    2
     } ;
 
-static const flex_int16_t yy_def[15] =
+static const flex_int16_t yy_def[10] =
     {   0,
-       11,   11,   10,   12,   10,   12,   13,   14,   10,    0,
-       10,   10,   10,   10
+        8,    1,    8,    8,    8,    9,    9,    0,    8
     } ;
 
-static const flex_int16_t yy_nxt[21] =
+static const flex_int16_t yy_nxt[10] =
     {   0,
-       10,    5,    8,    6,    5,    9,    6,    4,    4,    4,
-        4,    7,    8,   10,    3,   10,   10,   10,   10,   10
+        4,    5,    6,    7,    8,    3,    8,    8,    8
     } ;
 
-static const flex_int16_t yy_chk[21] =
+static const flex_int16_t yy_chk[10] =
     {   0,
-        0,    1,   14,    1,    2,   13,    2,   11,   11,   11,
-       11,   12,    6,    3,   10,   10,   10,   10,   10,   10
+        1,    1,    1,    9,    3,    8,    8,    8,    8
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -446,8 +442,8 @@ char *yytext;
 #line 1 "actividad_13.l"
 #line 3 "actividad_13.l"
 
-#line 450 "lex.yy.c"
-#line 451 "lex.yy.c"
+#line 446 "lex.yy.c"
+#line 447 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -667,7 +663,7 @@ YY_DECL
 #line 7 "actividad_13.l"
 
 
-#line 671 "lex.yy.c"
+#line 667 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -694,13 +690,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 11 )
+				if ( yy_current_state >= 9 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 15 );
+		while ( yy_base[yy_current_state] != 6 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -727,7 +723,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 9 "actividad_13.l"
-{printf("Es un entero %d",atoi(yytext));}
+{printf("\nEs un entero %d",atoi(yytext));}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
@@ -739,7 +735,7 @@ YY_RULE_SETUP
 #line 12 "actividad_13.l"
 ECHO;
 	YY_BREAK
-#line 743 "lex.yy.c"
+#line 739 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1036,7 +1032,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 11 )
+			if ( yy_current_state >= 9 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1064,11 +1060,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 11 )
+		if ( yy_current_state >= 9 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 10);
+	yy_is_jam = (yy_current_state == 8);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }

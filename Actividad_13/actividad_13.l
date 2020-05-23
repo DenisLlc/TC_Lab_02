@@ -6,7 +6,7 @@ DIGITO [0-9]
 
 %%
 
-{DIGITO}+ {printf("Es un entero %d",atoi(yytext));}
-.,;
+{DIGITO}{DIGITO}* {printf("\nEs un entero %d",atoi(yytext));}
+.
 
 %%

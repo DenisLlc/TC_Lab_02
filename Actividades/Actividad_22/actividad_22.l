@@ -5,6 +5,7 @@
 DIGITO [0-9]
 %%
 
-{DIGITO}+\*{DIGITO}+\={DIGITO}+ {printf("\nEs una multiplicacion \n");} 
+[\+\-]?[1-9]{DIGITO}*([\.\,]{DIGITO}+)*\*[\+\-]?[1-9]{DIGITO}*([\.\,]{DIGITO}+)*\=[\+\-]?[1-9]{DIGITO}*([\.\,]{DIGITO}+)* {printf("\nEs una multiplicacion \n");}
+
 
 %%
